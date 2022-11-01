@@ -1,0 +1,11 @@
+{
+  "name": "redes",
+  "version": "1.0.0",
+  "description": "Redes 1 Grupo 2",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Grupo 2",
+  "license": "ISC"
+}
