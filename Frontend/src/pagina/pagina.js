@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import './pagina.css';
+import Axios from "axios";
 
 export default class Pagina extends Component {
     constructor(p) {
@@ -8,6 +9,10 @@ export default class Pagina extends Component {
         this.inputChangedHandler2 = this.inputChangedHandler2.bind(this);
         this.inputChangedHandler3 = this.inputChangedHandler3.bind(this);
         this.insertar = this.insertar.bind(this);
+        
+        this.headers = {
+       'Content-Type': 'application/json'
+    }
         this.state = {
             arreglo: [],
             arreglo2: [],
@@ -27,10 +32,21 @@ export default class Pagina extends Component {
             
         }
         console.log(pr)
-        this.state.arreglo.push(pr)
-        console.log(this.state.arreglo)
+        const res = await Axios({
+            method:"post",
+            url: "http://localhost:4000/insertar",
+            data: pr,
+            headers : this.headers
+          }) 
+
+
+        const res2 = await Axios({
+            method:"post",
+            url: "http://localhost:4000/obtener_todas"
+          }) 
+
         this.setState({
-            arreglo2: this.state.arreglo
+            arreglo2: res2.data.resultado
         }
         
         )
