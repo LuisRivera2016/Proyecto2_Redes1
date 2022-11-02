@@ -186,7 +186,7 @@ end
 
 
 ### Topologia 2
-
+![](https://github.com/LuisRivera2016/Proyecto2_Redes1/blob/Keviin/img/topo2.jpg)
 #### Configuracion de Switch 
 **---------------------------------------------- Configuración ESW1 ----------------------------------------------**
 
@@ -228,30 +228,30 @@ write
 conf t
 int f0/0.10
 encapsulation dot1Q 10
-ip address 192.168.34.62 255.255.255.192
+ip address 192.168.24.222 255.255.255.224
 no shutdown
 exit
 int f0/0.20
 encapsulation dot1Q 20
-ip address 192.168.34.126 255.255.255.192
+ip address 192.168.24.238 255.255.255.240  
 no shutdown
 exit
 int f0/0.30
 encapsulation dot1Q 30
-ip address 192.168.34.190 255.255.255.192
+ip address 192.168.24.126 255.255.255.128
 no shutdown
 exit
 int f0/0.40
 encapsulation dot1Q 40
-ip address 192.168.34.254 255.255.255.192
+ip address 192.168.24.190 255.255.255.192
+no shutdown
+exit
+int f0/1
+ip address 10.2.0.17 255.255.255.252
 no shutdown
 exit
 int f1/0
-ip address 10.3.0.2 255.255.255.252
-no shutdown
-exit
-int f2/0
-ip address 10.3.0.6 255.255.255.252
+ip address 10.2.0.21 255.255.255.252
 no shutdown
 end
 ```
@@ -265,12 +265,12 @@ exit
 #### Ruteo
 ```sh
 conf t
-ip route 10.3.0.8 255.255.255.252 10.3.0.1
-ip route 10.3.0.12 255.255.255.252 10.3.0.5
-ip route 10.3.0.16 255.255.255.252 10.3.0.1
-ip route 10.3.0.20 255.255.255.252 10.3.0.5
-ip route 192.168.35.0 255.255.255.0 10.3.0.1
-ip route 192.168.35.0 255.255.255.0 10.3.0.5
+ip route 192.168.25.0 255.255.255.0 10.2.0.18
+ip route 10.2.0.0 255.255.255.248 10.2.0.18
+ip route 10.2.0.24 255.255.255.252 10.2.0.18
+ip route 192.168.25.0 255.255.255.0 10.2.0.22
+ip route 10.2.0.8 255.255.255.248 10.2.0.22
+ip route 10.2.0.28 255.255.255.252 10.2.0.22
 end
 ```
 #### Configuracion VPCS
@@ -298,11 +298,18 @@ ip
 ip
 ```
 
+#### Clientes-Ventas
+![](https://github.com/LuisRivera2016/Proyecto2_Redes1/blob/Keviin/img/cliente_ventas.jpg)
+
+#### DNS - Ventas
+![](https://github.com/LuisRivera2016/Proyecto2_Redes1/blob/Keviin/img/dns_ventas.jpg)
+
 #### Configuracion de nubes 
 
-**Cloud1**
-
-**Cloud2**
+**Cloud3**
+![](https://github.com/LuisRivera2016/Proyecto2_Redes1/blob/Keviin/img/Cloud3_TOPO2.jpg)
+**Cloud4**
+![](https://github.com/LuisRivera2016/Proyecto2_Redes1/blob/Keviin/img/cloud4_TOPO2.jpg)
 
 ### Topologia 3
 
@@ -350,57 +357,57 @@ write
 ```
 
 #### Configuracion de Routers
-**---------------------------------------------- Configuración R1 ----------------------------------------------**
+**---------------------------------------------- Configuración R6 ----------------------------------------------**
 ```sh
 conf t
 int f0/0.10
 encapsulation dot1Q 10
-ip address 192.168.35.62 255.255.255.192
+ip address 192.168.25.222 255.255.255.224
 no shutdown
 exit
 ```
 ```sh
 int f0/0.20
 encapsulation dot1Q 20
-ip address 192.168.35.126 255.255.255.192
+ip address 192.168.25.238 255.255.255.240  
 no shutdown
 exit
 ```
 ```sh
 int f0/0.30
 encapsulation dot1Q 30
-ip address 192.168.35.190 255.255.255.192
+ip address 192.168.25.126 255.255.255.128
 no shutdown
 exit
 ```
 ```sh
 int f0/0.40
 encapsulation dot1Q 40
-ip address 192.168.35.254 255.255.255.192
+ip address 192.168.25.190 255.255.255.192
+no shutdown
+exit
+```
+```sh
+int f0/1
+ip address 10.2.0.26 255.255.255.252
 no shutdown
 exit
 ```
 ```sh
 int f1/0
-ip address 10.3.0.18 255.255.255.252
-no shutdown
-exit
-```
-```sh
-int f2/0
-ip address 10.3.0.22 255.255.255.252
+ip address 10.2.0.30 255.255.255.252
 no shutdown
 end
 ```
 #### Ruteo
 ```sh
 conf t
-ip route 10.3.0.8 255.255.255.252 10.3.0.17
-ip route 10.3.0.12 255.255.255.252 10.3.0.21
-ip route 10.3.0.0 255.255.255.252 10.3.0.17
-ip route 10.3.0.4 255.255.255.252 10.3.0.21
-ip route 192.168.34.0 255.255.255.0 10.3.0.17
-ip route 192.168.34.0 255.255.255.0 10.3.0.21
+ip route 192.168.24.0 255.255.255.0 10.2.0.25
+ip route 10.2.0.0 255.255.255.248 10.2.0.25
+ip route 10.2.0.16 255.255.255.252 10.2.0.25
+ip route 192.168.24.0 255.255.255.0 10.2.0.29
+ip route 10.2.0.8 255.255.255.248 10.2.0.29
+ip route 10.2.0.20 255.255.255.252 10.2.0.29
 end
 ```
 #### Configuracion VPCS
