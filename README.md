@@ -312,6 +312,7 @@ ip
 ![](https://github.com/LuisRivera2016/Proyecto2_Redes1/blob/Keviin/img/cloud4_TOPO2.jpg)
 
 ### Topologia 3
+![](https://github.com/LuisRivera2016/Proyecto2_Redes1/blob/Keviin/img/T3.JPG)
 
 #### Configuracion de Switch
 **---------------------------------------------- Configuración ESW1 ----------------------------------------------**
@@ -357,7 +358,7 @@ write
 ```
 
 #### Configuracion de Routers
-**---------------------------------------------- Configuración R6 ----------------------------------------------**
+**---------------------------------------------- Configuración R1 ----------------------------------------------**
 ```sh
 conf t
 int f0/0.10
@@ -430,6 +431,13 @@ ip
 ```sh
 ip
 ```
+
+#### Configuracion de nubes 
+
+**Cloud1**
+![](https://github.com/LuisRivera2016/Proyecto2_Redes1/blob/Keviin/img/T3_C1.JPG)
+**Cloud2**
+![](https://github.com/LuisRivera2016/Proyecto2_Redes1/blob/Keviin/img/T3_C2.JPG)
 
 
 
