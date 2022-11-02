@@ -9,6 +9,7 @@ export default class Pagina extends Component {
         this.inputChangedHandler2 = this.inputChangedHandler2.bind(this);
         this.inputChangedHandler3 = this.inputChangedHandler3.bind(this);
         this.insertar = this.insertar.bind(this);
+        this.cargar = this.cargar.bind(this);
         
         this.headers = {
        'Content-Type': 'application/json'
@@ -21,6 +22,24 @@ export default class Pagina extends Component {
             precio: 0.00
         }
     }
+
+    componentDidMount() {
+        this.cargar()
+    }
+
+    cargar = async e => {
+       
+        const res2 = await Axios({
+            method:"post",
+            url: "http://localhost:4000/obtener_todas"
+          }) 
+
+        this.setState({
+            arreglo2: res2.data.resultado
+        })
+
+    }
+
 
     insertar = async e => {
         e.preventDefault();
