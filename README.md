@@ -41,19 +41,6 @@
 ### Topologia 1
 ![](https://github.com/LuisRivera2016/Proyecto2_Redes1/blob/Keviin/img/t1_topo.jpg)
 
-**---------------------------------------------- Configuración R1 ----------------------------------------------**
-
-```sh
-conf t
-int f1/0
-ip address 10.2.0.1 255.255.255.252
-no shutdown
-exit
-int f0/0
-ip address 10.2.0.9 255.255.255.252
-no shutdown
-end
-```
 **---------------------------------------------- Configuración R2 ----------------------------------------------**
 
 ```sh
@@ -81,6 +68,19 @@ no shutdown
 end
 ```
 **---------------------------------------------- Configuración R4 ----------------------------------------------**
+
+```sh
+conf t
+int f1/0
+ip address 10.2.0.1 255.255.255.252
+no shutdown
+exit
+int f0/0
+ip address 10.2.0.9 255.255.255.252
+no shutdown
+end
+```
+**---------------------------------------------- Configuración R5 ----------------------------------------------**
 
 ```sh
 conf t
