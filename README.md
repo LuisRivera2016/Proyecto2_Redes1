@@ -36,9 +36,9 @@
 ### Subnetting Routers Topologias 1,2,3
 ![](https://github.com/LuisRivera2016/Proyecto2_Redes1/blob/Keviin/img/subneting.png)
 
-## Topologías 
 
-### Topologia 1
+
+## Topologia 1
 ![](https://github.com/LuisRivera2016/Proyecto2_Redes1/blob/Keviin/img/t1_topo.jpg)
 
 **---------------------------------------------- Configuración R2 ----------------------------------------------**
@@ -200,7 +200,7 @@ end
 
 
 
-### Topologia 2
+## Topologia 2
 ![](https://github.com/LuisRivera2016/Proyecto2_Redes1/blob/Keviin/img/topo2.jpg)
 #### Configuracion de Switch 
 **---------------------------------------------- Configuración ESW1 ----------------------------------------------**
@@ -306,7 +306,7 @@ end
 
 ![](https://github.com/LuisRivera2016/Proyecto2_Redes1/blob/Keviin/img/cloud4_TOPO2.jpg)
 
-### Topologia 3
+## Topologia 3
 ![](https://github.com/LuisRivera2016/Proyecto2_Redes1/blob/Keviin/img/T3.JPG)
 
 #### Configuracion de Switch
