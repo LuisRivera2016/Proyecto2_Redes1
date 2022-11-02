@@ -436,6 +436,8 @@ ip
 
 **Cloud1**
 ![](https://github.com/LuisRivera2016/Proyecto2_Redes1/blob/Keviin/img/T3_C1.JPG)
+
+
 **Cloud2**
 ![](https://github.com/LuisRivera2016/Proyecto2_Redes1/blob/Keviin/img/T3_C2.JPG)
 
