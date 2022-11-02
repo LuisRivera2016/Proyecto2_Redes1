@@ -42,7 +42,7 @@ app.post("/obtener_todas", (req,res) => {
             res.setHeader('Access-Control-Allow-Mathods','GET,PUT,POST,DELETE,OPTIONS');
             res.statusCode = 200;
             res.contentType('application/json').json({
-                results: myData,
+                resultado: myData,
                 codigo: 200
             });
 })
