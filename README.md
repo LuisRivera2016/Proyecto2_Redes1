@@ -179,15 +179,22 @@ end
 #### Configuracion de nubes 
 
 **Cloud5**
+
 ![](https://github.com/LuisRivera2016/Proyecto2_Redes1/blob/Keviin/img/t1_%20cloud5.png)
 
+
 **Cloud6**
+
 ![](https://github.com/LuisRivera2016/Proyecto2_Redes1/blob/Keviin/img/t1_%20cloud6.png)
 
+
 **Cloud7**
+
 ![](https://github.com/LuisRivera2016/Proyecto2_Redes1/blob/Keviin/img/t1_%20cloud7.png)
 
+
 **Cloud8**
+
 ![](https://github.com/LuisRivera2016/Proyecto2_Redes1/blob/Keviin/img/t1_%20cloud8.png)
 
 
@@ -291,8 +298,12 @@ end
 #### Configuracion de nubes 
 
 **Cloud3**
+
 ![](https://github.com/LuisRivera2016/Proyecto2_Redes1/blob/Keviin/img/Cloud3_TOPO2.jpg)
+
+
 **Cloud4**
+
 ![](https://github.com/LuisRivera2016/Proyecto2_Redes1/blob/Keviin/img/cloud4_TOPO2.jpg)
 
 ### Topologia 3
@@ -399,10 +410,12 @@ end
 #### Configuracion de nubes 
 
 **Cloud1**
+
 ![](https://github.com/LuisRivera2016/Proyecto2_Redes1/blob/Keviin/img/T3_C1.JPG)
 
 
 **Cloud2**
+
 ![](https://github.com/LuisRivera2016/Proyecto2_Redes1/blob/Keviin/img/T3_C2.JPG)
 
 
